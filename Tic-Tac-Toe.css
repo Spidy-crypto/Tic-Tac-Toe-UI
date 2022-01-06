@@ -1,0 +1,45 @@
+table{
+	height: inherit;
+	margin: auto;
+	width: 50%;
+	margin-top: 1%;
+	text-align: center;
+	font-size: 5vh;
+}	
+tr:not(:last-child){
+	border-bottom: 1px solid gray;
+}
+
+td:not(:first-child){
+	border-left: 1px solid gray;
+}
+
+p{
+	text-align: center;
+}
+td:hover{
+	cursor: pointer;
+	background-color: WhiteSmoke;
+}
+td{
+	height: 10%;
+	width: 10%;
+}
+#input{
+	display: flex; 
+	justify-content: center;
+	margin-top: 1%;
+}
+#size{
+	border-radius: 10px;
+	margin-right: 1%;
+}
+h1{
+	text-align: center;
+	font-size: 5vh;
+	font-weight: bolder;
+}
+#turn{
+	font-weight: 600;
+	margin-top: 1%;
+}
