@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" type="text/css" href="./Tic-Tac-Toe.css">
+</head>
+<body> 
+
+    <div id = "modal" class = "modal">
+       <div class = "modal-background"></div>
+       <div class = "modal-content">
+          <div class = "box" style="display: flex;justify-content: space-between;">
+             	<p id = "result"></p>
+             	<button class="button is-primary"  onclick="location.reload()">Start Again</button>
+          </div>
+       </div>
+       <button class = "modal-close is-large" onclick = "modal_close()" aria-label = "close"></button>
+    </div>
+
+    <h1>Tic Tac Toe</h1>
+
+    <p id="turn">Enter Size</p>
+
+    <div id="input">
+    	<input type="text" name="size" id="size" placeholder="Enter Size between 3 to 9" value="3"/>
+    	<button class="button is-primary" onclick="board()">Create</button>
+	</div>
+
+    <div style="height: 70vh;">
+    	<table></table>
+    </div>
+	
+	<script type="text/javascript" src="./Tic-Tac-Toe.js"></script>
+</body>
+
+</html>
